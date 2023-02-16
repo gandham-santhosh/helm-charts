@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gsbapp
+spec:
+  selector:
+    matchLabels:
+      app: gsbapp
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: gsbapp
+    spec:
+      containers:
+      - name: gsbapp
+        image: santhoshgandham/gsb-apache-updated
+        ports:
+        - containerPort: 8080
