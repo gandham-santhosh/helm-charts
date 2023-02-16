@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: gsbapp
-        image: santhoshgandham/gsb-apache-updated
+        image: santhoshgandham/gsb-apache-updated:v1
         ports:
         - containerPort: 8080
